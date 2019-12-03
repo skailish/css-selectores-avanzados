@@ -1,1 +1,73 @@
+body {
+    color: black;
+    width: 50%;
+    font-size: x-large;
+}
 
+a {
+    color: black;
+}
+
+
+li:nth-of-type(even) {
+    color: green;
+}
+
+nav li:nth-child(3) {
+    background-color: lightblue;
+}
+
+nav li:first-child {
+    border-top: 1px solid green;
+}
+
+nav li:last-child {
+    border-bottom: 5px solid blue;
+}
+
+nav li:nth-of-type(2n+3):not(:last-child) {
+    color: red;
+}
+
+nav li:nth-child(5):hover  {
+    color: gray;
+}
+
+.disabled:not(a) {
+    color: gray;
+}
+
+a.disabled {
+    color: purple;
+}
+
+.active {
+    color: gold;
+}
+
+.padre div:nth-child(1) {
+    color: red;
+}
+
+.padre div:nth-last-child(2) {
+    color: blue;
+}
+
+div > div > div > h4:first-of-type {
+    background-color: red;
+}
+
+div > div > div > h4:last-of-type {
+    background-color: blue;
+}
+
+.abuelo > h4 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+                
+/* el span.disabled que contiene "mayo" no cambia, el div.disabled que lo contiene tiene aplicada esta clase, pero no afecta al span... porque tiene otra clase /// CORREGIR??? */
+.promo {
+    color: gold;
+    font-weight: bold;
+}
